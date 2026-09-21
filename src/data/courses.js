@@ -1,4 +1,7 @@
-import { getCourseImage } from "./courseImages";
+// ============================================================
+// IMAGE BASE PATH
+// ============================================================
+const BASE_PATH = "/src/assets/images/courses_cover/";
 
 export const courseCategories = [
   { id: "all", label: "All Courses" },
@@ -24,7 +27,7 @@ export const courses = [
     duration: "10 Days",
     type: "Offshore / Marine",
     participants: "10 – 20",
-    image: getCourseImage(1),
+    image: BASE_PATH + "1.webp",
     summary:
       "Comprehensive water survival training for personnel working near or over water.",
     overview:
@@ -65,7 +68,7 @@ export const courses = [
     duration: "1 Day",
     type: "Offshore / Marine",
     participants: "16",
-    image: getCourseImage(2),
+    image: BASE_PATH + "2.webp",
     summary:
       "Makes delegates aware of all possible escape and survival techniques and procedures available in case of disaster, and how to use safety equipment onboard your boat.",
     overview:
@@ -105,7 +108,7 @@ export const courses = [
     duration: "1 Day",
     type: "Offshore / Marine",
     participants: "16",
-    image: getCourseImage(3),
+    image: BASE_PATH + "3.webp",
     summary:
       "Prepares offshore workers and military personnel who are regularly transported by helicopter for emergency exit in case of crash landing over water.",
     overview:
@@ -153,7 +156,7 @@ export const courses = [
     duration: "5 Days",
     type: "Offshore / Marine",
     participants: "16",
-    image: getCourseImage(7),
+    image: BASE_PATH + "4.webp",
     summary:
       "Professional lifeguard training covering water rescue and offshore survival techniques.",
     overview:
@@ -187,16 +190,17 @@ export const courses = [
   {
     slug: "bosiet",
     name: "BOSIET",
-    fullName: "Basic Offshore Safety Induction & Emergency Training",
+    fullName:
+      "Basic Offshore Safety Induction & Emergency Training",
     category: "offshore",
     duration: "3 Days",
     type: "Offshore / Marine",
     participants: "16",
-    image: getCourseImage(25),
+    image: BASE_PATH + "5.webp",
     summary:
       "Provides delegates with a basic level of understanding and awareness of safety and emergency response procedures on offshore installations.",
     overview:
-      "This course is intended to meet the minimum standards of proficiency in personal safety and social responsibilities, personal survival techniques, elementary first aid, and fire prevention and firefighting training.",
+      "This course is intended to meet the minimum standards of proficiency in personal safety and social responsibilities, personal survival techniques, elementary first aid, and fire prevention and firefighting training. It is structured to provide candidates with an elementary knowledge of safety and emergency response procedures.",
     audience: [
       "New offshore personnel",
       "Oil & gas workers requiring certification",
@@ -252,7 +256,7 @@ export const courses = [
     duration: "4 Days",
     type: "Offshore / Marine",
     participants: "16",
-    image: getCourseImage(26),
+    image: BASE_PATH + "6.webp",
     summary:
       "International maritime safety training under the STCW95 convention.",
     overview:
@@ -291,7 +295,7 @@ export const courses = [
     duration: "1 Day",
     type: "Offshore / Marine",
     participants: "16",
-    image: getCourseImage(28),
+    image: BASE_PATH + "7.webp",
     summary:
       "Personnel transfer training using the swing rope technique for offshore installations.",
     overview:
@@ -328,11 +332,11 @@ export const courses = [
     duration: "1 Day",
     type: "Offshore / Marine",
     participants: "16",
-    image: getCourseImage(30),
+    image: BASE_PATH + "8.webp",
     summary:
       "Awareness training for personnel who may encounter Hydrogen Sulphide in offshore environments.",
     overview:
-      "This course prepares delegates for the possible encounter of Hydrogen Sulphide (H2S) in an offshore environment.",
+      "This course prepares delegates for the possible encounter of Hydrogen Sulphide (H2S) in an offshore environment. It is intended for personnel who may be required to enter H2S designated areas and who may potentially be exposed to H2S.",
     audience: [
       "Offshore personnel",
       "Personnel entering H2S designated areas",
@@ -377,7 +381,7 @@ export const courses = [
     duration: "1 Day",
     type: "Fire & Emergency",
     participants: "16",
-    image: getCourseImage(5),
+    image: BASE_PATH + "9.webp",
     summary:
       "Equips learners with the knowledge and skills to manage and extinguish a fire in the home, office or work environment using a variety of firefighting equipment.",
     overview:
@@ -416,7 +420,7 @@ export const courses = [
     duration: "4 Days",
     type: "Fire & Emergency",
     participants: "16",
-    image: getCourseImage(6),
+    image: BASE_PATH + "10.webp",
     summary:
       "Advanced firefighting techniques for fire teams — covering strategy, breathing apparatus use, compartment fires and coordinated team tactics.",
     overview:
@@ -424,7 +428,7 @@ export const courses = [
     audience: ["Fire team members", "Emergency responders"],
     objectives: [
       "Size up fire situations",
-      "Determine best method of controlling the fire",
+      "Determine best method of controlling the fire, boilovers, pressure fire, bleves and shutdown procedures",
       "Send fire ground messages to control/management",
       "Conduct fire investigation and fire risk analysis",
       "Handle toxic chemical hazards protection",
@@ -464,7 +468,7 @@ export const courses = [
     duration: "1 Day",
     type: "First Aid",
     participants: "16",
-    image: getCourseImage(35),
+    image: BASE_PATH + "11.webp",
     summary:
       "The provision of initial care to persons with illness or injury — an invaluable skill that can save lives in both the workplace and the domestic environment.",
     overview:
@@ -512,7 +516,7 @@ export const courses = [
     duration: "5 Days",
     type: "First Aid",
     participants: "16",
-    image: getCourseImage(4),
+    image: BASE_PATH + "12.webp",
     summary:
       "Advanced theoretical knowledge and practical skills required to manage an emergency — extending basic first aid with CPR protocols and casualty management.",
     overview:
@@ -555,7 +559,7 @@ export const courses = [
     duration: "4 Days",
     type: "Industrial Safety",
     participants: "16",
-    image: getCourseImage(8),
+    image: BASE_PATH + "13.webp",
     summary:
       "Designed for personnel who operate inside or around confined spaces — enclosed areas where exposure to hazardous substances or dangerous conditions (such as lack of oxygen) is possible.",
     overview:
@@ -596,7 +600,7 @@ export const courses = [
     duration: "1 Day",
     type: "Industrial Safety",
     participants: "16",
-    image: getCourseImage(10),
+    image: BASE_PATH + "14.webp",
     summary:
       "Practical training in identifying, evaluating and controlling workplace hazards.",
     overview:
@@ -638,7 +642,7 @@ export const courses = [
     duration: "3 Days",
     type: "Industrial Safety",
     participants: "16",
-    image: getCourseImage(11),
+    image: BASE_PATH + "15.webp",
     summary:
       "Enables participants to be competent in gas testing and the use of breathing apparatus to identify risks associated with working in hazardous atmospheres.",
     overview:
@@ -676,7 +680,7 @@ export const courses = [
     duration: "3 Days",
     type: "Industrial Safety",
     participants: "16",
-    image: getCourseImage(12),
+    image: BASE_PATH + "16.webp",
     summary:
       "Safety awareness for personnel involved in welding operations.",
     overview:
@@ -714,16 +718,16 @@ export const courses = [
     duration: "3 Days",
     type: "Industrial Safety",
     participants: "16",
-    image: getCourseImage(13),
+    image: BASE_PATH + "17.webp",
     summary:
       "Safe handling, storage and disposal of hazardous materials in industrial settings.",
     overview:
       "Protects personnel from injury and prevents property damage due to unexpected release of energy or hazardous materials.",
     audience: ["Industrial workers", "Warehouse staff", "HSE officers"],
     objectives: [
-      "Protect personnel from injury and prevent property damage",
+      "Protect personnel from injury and prevent property damage due to unexpected release of energy or hazardous materials",
       "Ensure hazardous substances are well protected",
-      "Understand Safe Handling of Chemicals (SHOC) and MSDS",
+      "Educate participants on the use of Safe Handling of Chemicals (SHOC) and Materials Safety Data Sheet (MSDS)",
       "Ensure compliance with statutory requirements",
       "Secure safety, health and welfare of workers",
       "Ensure compliance with environmental protection",
@@ -757,7 +761,7 @@ export const courses = [
     duration: "3 Days",
     type: "Industrial Safety",
     participants: "16",
-    image: getCourseImage(15),
+    image: BASE_PATH + "18.webp",
     summary:
       "Electrical safety awareness for personnel working with or near electrical equipment.",
     overview:
@@ -800,7 +804,7 @@ export const courses = [
     duration: "1 Day",
     type: "Industrial Safety",
     participants: "16",
-    image: getCourseImage(16),
+    image: BASE_PATH + "19.webp",
     summary:
       "Fall prevention and safe work practices for elevated work environments.",
     overview:
@@ -839,7 +843,7 @@ export const courses = [
     duration: "1 Day",
     type: "Industrial Safety",
     participants: "16",
-    image: getCourseImage(18),
+    image: BASE_PATH + "20.webp",
     summary:
       "Systematic approach to identifying and controlling hazards in specific job tasks.",
     overview:
@@ -880,7 +884,7 @@ export const courses = [
     duration: "1 Day",
     type: "Industrial Safety",
     participants: "16",
-    image: getCourseImage(19),
+    image: BASE_PATH + "21.webp",
     summary:
       "Techniques for investigating workplace incidents and preventing recurrence.",
     overview:
@@ -920,7 +924,7 @@ export const courses = [
     duration: "1 Day",
     type: "Industrial Safety",
     participants: "16",
-    image: getCourseImage(20),
+    image: BASE_PATH + "22.webp",
     summary:
       "Understanding and improving individual safety behaviours in the workplace.",
     overview:
@@ -959,7 +963,7 @@ export const courses = [
     duration: "1 Day",
     type: "Industrial Safety",
     participants: "16",
-    image: getCourseImage(21),
+    image: BASE_PATH + "23.webp",
     summary:
       "Preventing hand and finger injuries in industrial work environments.",
     overview:
@@ -998,7 +1002,7 @@ export const courses = [
     duration: "1 Day",
     type: "Industrial Safety",
     participants: "16",
-    image: getCourseImage(22),
+    image: BASE_PATH + "24.webp",
     summary:
       "Safe methods of handling materials to prevent workplace injuries.",
     overview:
@@ -1037,7 +1041,7 @@ export const courses = [
     duration: "1 Day",
     type: "Industrial Safety",
     participants: "16",
-    image: getCourseImage(23),
+    image: BASE_PATH + "25.webp",
     summary:
       "Correct selection, use and maintenance of Personal Protective Equipment.",
     overview:
@@ -1046,9 +1050,9 @@ export const courses = [
     objectives: [
       "Minimize workers' exposure to hazards",
       "Reduce the gravity or impact of injury sustained",
-      "Identify PPE as the last line of defense",
-      "Educate participants on the basic understanding of hazards",
-      "Educate on the right type of PPE to be used for any particular job",
+      "Identify PPE as the last line of defense between workers and potential hazards",
+      "Educate participants on the basic understanding of hazards concerned before PPEs are used",
+      "Educate on the right type of PPE to be used on any particular type of job",
     ],
     learn: [
       "PPE types",
@@ -1077,7 +1081,7 @@ export const courses = [
     duration: "1 Day",
     type: "Industrial Safety",
     participants: "16",
-    image: getCourseImage(24),
+    image: BASE_PATH + "26.webp",
     summary:
       "Systematic control of non-routine and high-risk work activities.",
     overview:
@@ -1124,7 +1128,7 @@ export const courses = [
     duration: "3 Days",
     type: "Lifting & Rigging",
     participants: "16",
-    image: getCourseImage(14),
+    image: BASE_PATH + "27.webp",
     summary:
       "Certification training for safe crane operation.",
     overview:
@@ -1163,7 +1167,7 @@ export const courses = [
     duration: "2 Days",
     type: "Lifting & Rigging",
     participants: "16",
-    image: getCourseImage(17),
+    image: BASE_PATH + "28.webp",
     summary:
       "Certification training for safe forklift operation.",
     overview:
@@ -1202,7 +1206,7 @@ export const courses = [
     duration: "2 Days (Fresher) / 1 Day (Experienced)",
     type: "Lifting & Rigging",
     participants: "16",
-    image: getCourseImage(27),
+    image: BASE_PATH + "29.webp",
     summary:
       "Slinging and signalling training for crane operations.",
     overview:
@@ -1210,9 +1214,9 @@ export const courses = [
     audience: ["Slingers", "Riggers", "Banksmen"],
     objectives: [
       "Educate the slinger to safely sling and signal to cranes of various types",
-      "Acquaint the slinger with statutory duties under the Health and Safety Act 1974",
+      "Acquaint the slinger with the statutory duties under the Health and Safety Act 1974 and other relevant legislation",
       "Teach correct slinging/signalling techniques and procedures",
-      "Teach the importance of weight, centre of gravity, and sling angles",
+      "Teach the importance of weight, centre of gravity, and sling angles in relation to safe working load",
     ],
     learn: [
       "Slinging techniques",
@@ -1243,7 +1247,7 @@ export const courses = [
     duration: "2 Days",
     type: "Lifting & Rigging",
     participants: "16",
-    image: getCourseImage(29),
+    image: BASE_PATH + "30.webp",
     summary:
       "Comprehensive rigging and lifting training for industrial operations.",
     overview:
@@ -1286,7 +1290,7 @@ export const courses = [
     duration: "2 Days",
     type: "Lifting & Rigging",
     participants: "16",
-    image: getCourseImage(32),
+    image: BASE_PATH + "31.webp",
     summary:
       "Comprehensive lifting and hoisting operations, planning and safety.",
     overview:
@@ -1336,7 +1340,7 @@ export const courses = [
     duration: "5 Days",
     type: "HSE",
     participants: "16",
-    image: getCourseImage(31),
+    image: BASE_PATH + "32.webp",
     summary:
       "Comprehensive introduction to Health, Safety and Environment practices.",
     overview:
@@ -1395,7 +1399,7 @@ export const courses = [
     duration: "5 Days",
     type: "HSE",
     participants: "16",
-    image: getCourseImage(33),
+    image: BASE_PATH + "33.webp",
     summary:
       "Internationally recognised NEBOSH-aligned HSE training.",
     overview:
@@ -1444,7 +1448,7 @@ export const courses = [
     duration: "4 Days",
     type: "HSE",
     participants: "16",
-    image: getCourseImage(34),
+    image: BASE_PATH + "34.webp",
     summary:
       "Lead auditor training for OH&S management systems.",
     overview:
@@ -1486,7 +1490,7 @@ export const courses = [
     duration: "1 Day",
     type: "HSE",
     participants: "16",
-    image: getCourseImage(37),
+    image: BASE_PATH + "35.webp",
     summary:
       "Developing, registering and managing HSE policies within an organisation.",
     overview:
@@ -1501,7 +1505,7 @@ export const courses = [
     learn: [
       "HSE Documentation Process",
       "Aims/objectives of HSE Policies",
-      "HSE Policy definitions",
+      "HSE Policy definitions — Standards, Procedures, Guidelines",
       "Developing policies",
       "Primary and secondary policies in relation to HSE-MS",
       "HSE policy examples",
@@ -1532,7 +1536,7 @@ export const courses = [
     duration: "1 Day",
     type: "Driving & Transport",
     participants: "16",
-    image: getCourseImage(9),
+    image: BASE_PATH + "36.webp",
     summary:
       "Defensive driving techniques for preventing road accidents.",
     overview:
@@ -1572,7 +1576,7 @@ export const courses = [
     duration: "1 Day",
     type: "Driving & Transport",
     participants: "16",
-    image: getCourseImage(38),
+    image: BASE_PATH + "37.webp",
     summary:
       "Journey management systems for safe road transport operations.",
     overview:
@@ -1621,7 +1625,7 @@ export const courses = [
     duration: "3 Days",
     type: "Logistics & Supply Chain",
     participants: "16",
-    image: getCourseImage(39),
+    image: BASE_PATH + "38.webp",
     summary:
       "Comprehensive warehouse and inventory management training.",
     overview:
@@ -1665,7 +1669,7 @@ export const courses = [
     duration: "3 Days",
     type: "Logistics & Supply Chain",
     participants: "16",
-    image: getCourseImage(40),
+    image: BASE_PATH + "39.webp",
     summary:
       "Comprehensive transport and logistics management training.",
     overview:
@@ -1722,7 +1726,7 @@ export const courses = [
     duration: "3 Days",
     type: "Logistics & Supply Chain",
     participants: "16",
-    image: getCourseImage(41),
+    image: BASE_PATH + "40.webp",
     summary:
       "Customer service excellence training for front-line staff and managers.",
     overview:
@@ -1767,7 +1771,7 @@ export const courses = [
     duration: "3 Days",
     type: "Logistics & Supply Chain",
     participants: "16",
-    image: getCourseImage(42),
+    image: BASE_PATH + "41.webp",
     summary:
       "Inventory control techniques and tools for effective stock management.",
     overview:
@@ -1784,14 +1788,14 @@ export const courses = [
       "Inventory cost",
       "Functions of inventory control",
       "Steps in inventory control",
-      "Inventory control techniques (FIFO, LIFO, HIFO, etc.)",
+      "Inventory control techniques (FIFO, LIFO, HIFO, Base Stock, Simple Average, Weighted Average, JIT, EOQ)",
       "Tools of inventory control",
       "Company inventory control policy",
       "Ordering procedure",
       "Stock records",
       "Safety stocks",
       "Stores layout",
-      "ABC analysis, VED analysis, etc.",
+      "ABC analysis, VED analysis, S-OS analysis, M-N-G analysis, F-S-N analysis",
     ],
     modules: [
       "Module 1 — Inventory Control Fundamentals",
@@ -1815,7 +1819,7 @@ export const courses = [
     duration: "3 Days",
     type: "Logistics & Supply Chain",
     participants: "16",
-    image: getCourseImage(43),
+    image: BASE_PATH + "42.webp",
     summary:
       "Stock coding, barcoding, RFID and automatic identification technologies.",
     overview:
@@ -1834,7 +1838,7 @@ export const courses = [
       "Barcode (1D & 2D)",
       "Barcode symbologies",
       "Advantages and disadvantages of barcode",
-      "RFID technologies",
+      "RFID technologies (Passive, Active, Semi-Passive)",
       "Electronic Product Code",
       "Advantages and disadvantages of RFID",
       "Sensor ID technology",
@@ -1866,7 +1870,7 @@ export const courses = [
     duration: "4 Days",
     type: "Industrial Safety",
     participants: "16",
-    image: getCourseImage(36),
+    image: BASE_PATH + "43.webp",
     summary:
       "Port operations, HSE management and marine safety training.",
     overview:
