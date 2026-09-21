@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap");
+
+@import "tailwindcss";
+
+/* ---------- OPEANS theme tokens ---------- */
+@theme {
+  --color-brand: #323465;
+  --color-brand-light: #4a4d8a;
+  --color-brand-dark: #222344;
+  --color-ink: #171831;
+  --color-soft: #f4f4f8;
+  --color-line: #dedfea;
+  --color-muted: #686a7e;
+
+  --font-sans: "Inter", Arial, sans-serif;
+  --font-display: "Manrope", sans-serif;
+}
+
+/* ---------- Base ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------- Container ---------- */
+.container-x {
+  width: min(1180px, calc(100% - 40px));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------- Buttons (plain CSS, no @apply) ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Primary — brand purple background, white text */
+.btn-primary {
+  background-color: #323465 !important;
+  color: #ffffff !important;
+  border-color: #323465 !important;
+}
+
+.btn-primary:hover {
+  background-color: #222344 !important;
+  border-color: #222344 !important;
+  color: #ffffff !important;
+}
+
+/* Light — white background, brand text */
+.btn-light {
+  background-color: #ffffff !important;
+  color: #323465 !important;
+  border-color: #ffffff !important;
+}
+
+.btn-light:hover {
+  background-color: #f4f4f8 !important;
+  color: #323465 !important;
+}
+
+/* Outline — transparent with white border (for dark backgrounds) */
+.btn-outline {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.12) !important;
+  color: #ffffff !important;
+}
+
+/* Ghost — transparent with border, dark text */
+.btn-ghost {
+  background-color: transparent !important;
+  color: #171831 !important;
+  border-color: #dedfea !important;
+}
+
+.btn-ghost:hover {
+  background-color: #f4f4f8 !important;
+  color: #323465 !important;
+}
+
+/* ---------- Text helpers ---------- */
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #323465;
+  margin-bottom: 0.5rem;
+}
+
+.eyebrow-light {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.text-brand {
+  color: #323465;
+}
+
+.text-muted {
+  color: #686a7e;
+}
+
+.text-ink {
+  color: #171831;
+}
+
+.bg-brand {
+  background-color: #323465;
+}
+
+.bg-brand-dark {
+  background-color: #222344;
+}
+
+.bg-soft {
+  background-color: #f4f4f8;
+}
+
+.border-line {
+  border-color: #dedfea;
+}
+
+/* ---------- Sections ---------- */
+.section {
+  padding: 5rem 0;
+}
+
+.section-sm {
+  padding: 3rem 0;
+}
+
+/* ---------- Forms ---------- */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.field label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #323465;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #dedfea;
+  font-size: 0.875rem;
+  background: #fff;
+  color: #171831;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  font-family: inherit;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: #323465;
+  box-shadow: 0 0 0 4px rgba(50, 52, 101, 0.1);
+}
+
+.field textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+/* ---------- Badges ---------- */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.badge-success {
+  background: rgba(16, 185, 129, 0.12);
+  color: #059669;
+}
+
+.badge-warning {
+  background: rgba(245, 158, 11, 0.12);
+  color: #d97706;
+}
+
+.badge-danger {
+  background: rgba(239, 68, 68, 0.12);
+  color: #dc2626;
+}
+
+/* ---------- Data Table ---------- */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  background: #fff;
+  border: 1px solid #dedfea;
+}
+
+.data-table th,
+.data-table td {
+  padding: 1rem 1.25rem;
+  text-align: left;
+  border-bottom: 1px solid #dedfea;
+}
+
+.data-table th {
+  background: #f4f4f8;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #323465;
+  font-weight: 800;
+}
+
+.data-table tr:last-child td {
+  border-bottom: 0;
+}
+
+/* ---------- Accordion ---------- */
+.accordion-item {
+  border-bottom: 1px solid #dedfea;
+  background: #fff;
+}
+
+.accordion-item:last-child {
+  border-bottom: 0;
+}
+
+.accordion-header {
+  width: 100%;
+  background: #fff;
+  border: 0;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #171831;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.accordion-header:hover {
+  background: #f4f4f8;
+  color: #323465;
+}
+
+.accordion-body {
+  padding: 0 1.5rem 1.5rem;
+  color: #686a7e;
+  font-size: 0.875rem;
+  line-height: 1.7;
+}

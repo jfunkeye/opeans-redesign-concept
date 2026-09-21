@@ -1,0 +1,134 @@
+# ============================================
+# DEPENDENCIES
+# ============================================
+node_modules/
+.pnp
+.pnp.js
+.yarn/
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ============================================
+# BUILD OUTPUT
+# ============================================
+dist/
+dist-ssr/
+build/
+out/
+.vite/
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+
+# ============================================
+# PWA / SERVICE WORKER (generated)
+# ============================================
+dev-dist/
+sw.js
+sw.js.map
+workbox-*.js
+workbox-*.js.map
+registerSW.js
+manifest.webmanifest
+
+# ============================================
+# ENVIRONMENT VARIABLES
+# ============================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# ============================================
+# LOGS
+# ============================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ============================================
+# EDITOR / IDE
+# ============================================
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+.project
+.classpath
+.settings/
+
+# ============================================
+# OPERATING SYSTEM
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+*~
+
+# ============================================
+# TESTING / COVERAGE
+# ============================================
+coverage/
+.nyc_output/
+*.lcov
+.nycrc
+
+# ============================================
+# MISC / TOOLS
+# ============================================
+.eslintcache
+.stylelintcache
+.cache
+.temp
+.tmp
+*.tsbuildinfo
+
+# ============================================
+# ADMIN PANEL / LOCAL STORAGE DUMPS
+# (if you ever export admin data to files)
+# ============================================
+admin-exports/
+*.json.bak
+*.csv.bak
+
+# ============================================
+# BACKUP / CODE DUMP FILES
+# ============================================
+dump.txt
+codebase_dump.txt
+*.dump
+*backup*
+
+# ============================================
+# UPLOADED FILES (if you add file uploads later)
+# ============================================
+uploads/
+public/uploads/
+!public/uploads/.gitkeep
+
+# ============================================
+# KEEP THESE FILES
+# ============================================
+!.gitkeep
+!.env.example
